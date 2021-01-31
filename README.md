@@ -7,7 +7,7 @@ THis goal of this demo is to demonstrate what is the true order of event loop ph
 
 ## Аssumption
 The priority of `check` phase over the `poll` phase is due to the time OS needs for reading the file. 
-Once the reading is finished `poll` phase's cb is executed 
+Once the reading is finished `poll` phase's cb is executed in spite of any `check` phase cb's
 
 
 ## Аverage result
